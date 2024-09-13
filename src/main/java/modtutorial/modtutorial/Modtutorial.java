@@ -1,6 +1,7 @@
 package modtutorial.modtutorial;
 
 import com.mojang.logging.LogUtils;
+import modtutorial.modtutorial.block.ModBlocks;
 import modtutorial.modtutorial.item.Moditems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -48,6 +49,8 @@ public class Modtutorial {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
 
 
